@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="weather-icons/css/weather-icons.css" />
+		<link rel="stylesheet" href="fontawesome-free-5.13.1-web/css/all.min.css" />
+		<script defer src="script.js"></script>
+		<title>Local Weather</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="search">
+				<input
+					type="text"
+					class="search__input"
+					placeholder="Type a place, city or country"
+				/>
+				<i class="fas fa-search"></i>
+			</div>
+			<div class="location">
+				<div class="location__geo">
+					<strong>City</strong>,
+					<strong>Country</strong>
+				</div>
+				<div class="location__time">dd/mm/yyyy, HH:mm:ss AM</div>
+			</div>
+			<div class="summary-weather">
+				<div class="summary-weather__icon">
+					<img
+						src="http://openweathermap.org/img/wn/10d@2x.png"
+						alt="Weather status image"
+					/>
+				</div>
+				<span class="summary-weather__temperature"></span>
+			</div>
+			<span class="desc-weather">Description weather</span>
+			<div class="weather-details">
+				<div class="detail-items pressure">
+					<div class="detail-items__header">
+						<h5 class="detail-items__header--title">Pressure</h5>
+						<i class="wi wi-barometer"></i>
+					</div>
+					<span class="detail-items--value pressure-value">N/A</span>
+				</div>
+				<div class="detail-items wind">
+					<div class="detail-items__header">
+						<h5 class="detail-items__header--title">wind speed</h5>
+						<i class="wi wi-strong-wind"></i>
+					</div>
+					<span class="detail-items--value wind-value">N/A</span>
+				</div>
+				<div class="detail-items humidity">
+					<div class="detail-items__header">
+						<h5 class="detail-items__header--title">humidity</h5>
+						<i class="wi wi-humidity"></i>
+					</div>
+					<span class="detail-items--value humidity-value">N/A</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
