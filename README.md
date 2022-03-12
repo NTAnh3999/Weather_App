@@ -1,2 +1,2 @@
 # Weather_App
-Get weather conditions by location
+https://nta-weatherapp.netlify.app/
